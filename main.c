@@ -8,7 +8,7 @@ int main(int argc, char** argv)
 	int year = atoi(argv[1]);
 
 	// うるう年判定
-	if (is_leap_year(year)) {
+	if (IsLeapYear(year)) {
 		printf("うるう年です。\n");
 	} else {
 		printf("うるう年ではありません。\n");

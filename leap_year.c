@@ -1,11 +1,18 @@
 ﻿#include "leap_year.h"
 
-// うるう年判定
-int is_leap_year(int year)
+typedef enum
 {
+	FALSE = 0,
+	TRUE = 1
+} Bool;
+
+// うるう年判定
+int IsLeapYear(int year)
+{
+	// 年データyearがうるう年であるかどうか判定する
 	if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-		return 1;
+		return TRUE;
 	}
 
-	return 0;
+	return FALSE;
 }
